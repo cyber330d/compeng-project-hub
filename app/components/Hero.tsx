@@ -30,7 +30,7 @@ export default function HeroSection() {
 
       <div className="absolute  h-full w-full box-border">
         <Image
-          src="/slide 1.png" // Replace with your image path
+          src="/slide1.png" // Replace with your image path
           alt="Hero Image"
           width="1280"
           height="720"
