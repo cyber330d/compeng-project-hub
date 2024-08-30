@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function PartnersSection() {
   const partners = [
     { name: "Quthstech", logoUrl: "/i1.png" },
-    { name: "TechCorp", logoUrl: "/slide 2.png" },
+    { name: "TechCorp", logoUrl: "/slide2.png" },
     { name: "Cyber330d", logoUrl: "/i4.png" },
     { name: "InnoSoft", logoUrl: "/h1.jpeg" },
-    { name: "SamsHack", logoUrl: "/slide 3.png" },
+    { name: "SamsHack", logoUrl: "/slide3.png" },
   ];
 
   return (
