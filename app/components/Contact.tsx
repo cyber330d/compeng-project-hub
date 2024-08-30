@@ -36,7 +36,7 @@ export default function ContactSection() {
       </div>
       <div className="img w-full sm:w-1/2">
         <Image
-          src="/slide 1.png" // Replace with your image path
+          src="/slide1.png" // Replace with your image path
           alt="Hero Image"
           // layout="fill"
           // objectFit="cover"
