@@ -6,7 +6,7 @@ export default function Page() {
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
   return (
-    <div className="bg-blue-400 h-[30vh] text-center">
+    <div className="bg-blue-50 h-[30vh] text-center">
       <h2 className="text-3xl font-bold mb-4 text-dept-blue">
         Project Details: {id}
       </h2>

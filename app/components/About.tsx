@@ -4,7 +4,7 @@ export default function About() {
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-6">About CompEng Project Hub</h2>
         <p
-          className="max-w-3xl mx-auto text-gray-300 text-center px-8
+          className="max-w-3xl mx-auto text-gray-300 text-justify px-8
         "
         >
           CompEng Project Hub is a platform designed to showcase the best

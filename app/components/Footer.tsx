@@ -2,7 +2,7 @@ import { Github, Facebook, Linkedin, Instagram, Map, PhoneIcon, MailIcon } from 
 import Link from "next/link";
 export default function FooterSection() {
   return (
-    <footer className="bg-[#0e2b5a] shadow-md w-full  px-4 md:px-8 lg:px-16  text-white py-12 ">
+    <footer className="bg-primary shadow-md w-full  px-4 md:px-8 lg:px-16  text-white py-12 ">
       <div className="flex flex-wrap justify-between  items-start flex-col sm:flex-row gap-4 md:gap-8">
         <div className="flex flex-col gap-3 w-80">
           <h4 className="text-lg font-bold mb-2">CompEng Project Hub</h4>

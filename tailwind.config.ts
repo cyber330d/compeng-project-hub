@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#0e2b5a", // Sponsor's primary color
+        secondary: "#21a2f8", // Sponsor's secondary color
+        accent: "#f7f7f7",
+        dark: "#1a202c",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

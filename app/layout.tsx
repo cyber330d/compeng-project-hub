@@ -17,12 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="w-screen box-border">
-      <body className={`${inter.className}  bg-white  text-black`}>
-        <header className="px-16">
+    <html lang="en" className="w-full">
+      <body className={`${inter.className} w-full`}>
           <Navbar />
-        </header>
-        <main className="lg:px-16 ">{children}</main>
+        <main className="lg:px-16 ">
+          {/* <div className="w-full fixed  bg-[#0e2b5a] h-[4.4rem] z-10"></div> */}
+          {children}
+        </main>
         <FooterSection />
       </body>
     </html>

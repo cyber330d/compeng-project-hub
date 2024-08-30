@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <div className="relative flex h-screen items-center justify-center flex-col bg-gradient-to-b from-[#0e2b5a] to-[#1c3b73] box-border">
-      <div className=" w-full h-min sm:max-w-[60%] md:max-w-[55%] mx-auto px-6 py-8 z-10 rounded-lg flex flex-col items-center justify-center text-white bg-opacity-80 bg-black sm:mt-[9rem] absolute bottom-[3.5rem] md:bottom-40">
-
+      <div className=" w-full h-min sm:max-w-[60%] md:max-w-[55%] mx-auto px-6 py-8 z-10 rounded-lg flex flex-col items-center justify-center text-white ">
+        {/* bg-black  bg-opacity-80  sm:mt-[9rem] absolute bottom-[3.5rem] md:bottom-40  */}
         <h2 className="text-3xl md:text-5xl font-bold mb-4 text-center">
           Welcome to the Project Hub
         </h2>

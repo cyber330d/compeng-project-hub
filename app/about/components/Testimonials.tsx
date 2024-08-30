@@ -1,7 +1,20 @@
+
 import { User } from "lucide-react"; // Importing an avatar icon
 
 export default function Testimonials() {
   const testimonials = [
+    // {
+    //   name: "Jane Smith",
+    //   role: "Founder of EduCare",
+    //   testimonial:
+    //     "The mentorship and resources provided by compEng Project Hub were instrumental in our success. We couldn&apos;t have done it without them.",
+    // },
+    // {
+    //   name: "John Doe",
+    //   role: "CEO of Tech Innovators",
+    //   testimonial:
+    //     "Thanks to [Your Platform Name], we were able to secure the funding we needed to launch our product. The support and guidance we received were invaluable.",
+    // },
     {
       name: "Joshua Koji James",
       role: "Final Year Student",
@@ -24,12 +37,12 @@ export default function Testimonials() {
       name: "Samaila Musa",
       role: "Startup Founder",
       testimonial:
-        "CompEng Project Hub helped me identify talented students who could contribute to my startup. It's an excellent resource for finding fresh ideas and passionate individuals.",
+        "CompEng Project Hub helped me identify talented students who could contribute to my startup. It's an excellent resource for finding fresh ideas and passionate individuals. ",
     },
   ];
 
   return (
-    <div className="py-8 sm:py-16 bg-[#0e2b5a] text-white w-full overflow-hidden">
+    <div className="py-8 sm:py-16 px-6 text-primary w-full overflow-hidden" id="testimonials">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-6 sm:mb-12">
           Testimonials
@@ -38,16 +51,16 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="w-[14.5rem] h-64 bg-[#1c3b73] p-4 rounded-lg shadow-lg flex-shrink-0"
+              className="w-[14.5rem] h-64 bg-blue-50 p-4 rounded-lg shadow-lg flex-shrink-0"
             >
               <div className="flex items-center mb-4">
-                <User className="h-8 w-8 text-white mr-4" />
+                <User className="h-8 w-8 text-primary mr-4" />
                 <div>
                   <p className="font-bold">{testimonial.name}</p>
-                  <p className="text-gray-300 text-sm">{testimonial.role}</p>
+                  <p className="text-gray-800 text-sm">{testimonial.role}</p>
                 </div>
               </div>
-              <p className="text-gray-400 text-sm px-1">
+              <p className="text-gray-600 w-full text-sm px-1">
                 &quot;{testimonial.testimonial}&quot;
               </p>
             </div>

@@ -11,8 +11,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-blend-overlay z-50 lg:px-16 shadow-md">
-      <div className="w-[101.5%] bg-[#0e2b5a80] flex items-center justify-between p-4 rounded relative">
+    <nav className="fixed top-0 -left-16 -right-16  bg-blend-overlay z-50 shadow-md px-36 bg-primary p-4">
+      <div className="w-full flex items-center justify-between rounded">
         <div className="text-white text-base sm:text-xl md:text-2xl font-bold">
           <Link href="/">CompEng Project Hub</Link>
         </div>
@@ -49,7 +49,7 @@ export default function Navbar() {
             About
           </Link>
           <Link
-            href="/contact"
+            href="/about#contact-us"
             className="text-white hover:text-[#8fc7ed] transition-colors"
           >
             Contact
