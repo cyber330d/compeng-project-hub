@@ -13,12 +13,10 @@ export default function FooterSection() {
             <PhoneIcon /> (+234) 8129709392
           </p>
           <Link href="https://engineering.abu.edu.ng/department/compeng/public/">
-          <p className="flex gap-2">
-            <Map /> Department of Computer Engineering
-          </p>
-          <p className="flex pl-8">
-              Ahmadu Bello Universiy, Zaria
-          </p>
+            <p className="flex gap-2">
+              <Map /> Department of Computer Engineering
+            </p>
+            <p className="flex pl-8">Ahmadu Bello Universiy, Zaria</p>
           </Link>
           <div className=" flex  flex-col gap-3.5">
             <div className="flex gap-8">
@@ -170,9 +168,9 @@ export default function FooterSection() {
             <input
               type="email"
               placeholder="Your email"
-              className="p-2 rounded bg-white text-black placeholder-gray-600 focus:outline-none focus:border-[#1c3b73]"
+              className="p-2 rounded max-w-72 bg-white text-black placeholder-gray-600 focus:outline-none focus:border-[#1c3b73]"
             />
-            <button className="bg-blue-500 hover:bg-blue-700 transition text-white font-bold py-2 rounded">
+            <button className="bg-blue-500 hover:bg-blue-700 transition text-white font-bold py-2 rounded max-w-72">
               Subscribe
             </button>
           </form>
@@ -185,13 +183,22 @@ export default function FooterSection() {
           &copy; 2024 CompEng Project Hub. All rights reserved.
         </p>
         <div className="flex justify-center space-x-4">
-          <Link href="#" className="text-blue-300 hover:text-blue-500 transition">
+          <Link
+            href="#"
+            className="text-blue-300 hover:text-blue-500 transition"
+          >
             <i className="fab fa-facebook-f"></i>
           </Link>
-          <Link href="#" className="text-blue-300 hover:text-blue-500 transition">
+          <Link
+            href="#"
+            className="text-blue-300 hover:text-blue-500 transition"
+          >
             <i className="fab fa-twitter"></i>
           </Link>
-          <Link href="#" className="text-blue-300 hover:text-blue-500 transition">
+          <Link
+            href="#"
+            className="text-blue-300 hover:text-blue-500 transition"
+          >
             <i className="fab fa-linkedin-in"></i>
           </Link>
         </div>

@@ -47,7 +47,7 @@ export default function Testimonials() {
         <h2 className="text-3xl font-bold text-center mb-6 sm:mb-12">
           Testimonials
         </h2>
-        <div className="flex gap-4 lg:justify-center items-center overflow-x-auto sm:gap-8 scrollbar-hide p-4">
+        <div className="flex gap-4 justify-start lg:justify-center items-center overflow-x-auto sm:gap-8 scrollbar-hide p-4 pl-6">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}

@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 -left-16 -right-16  bg-blend-overlay z-50 shadow-md px-36 bg-primary p-4">
+    <nav className="fixed top-0 lg:-left-16 lg:-right-16  bg-blend-overlay z-50 shadow-md px-4 sm:px-0 lg:px-36 bg-primary p-4 w-full">
       <div className="w-full flex items-center justify-between rounded">
         <div className="text-white text-base sm:text-xl md:text-2xl font-bold">
           <Link href="/">CompEng Project Hub</Link>
@@ -21,7 +21,7 @@ export default function Navbar() {
         <div
           className={`${
             isOpen ? "flex" : "hidden"
-          } flex-col p-8 gap-6 absolute top-[3.6rem] bg-[#0e2b5ad0] w-72 rounded-lg -ml-4 
+          } flex-col p-8 gap-6 absolute top-[3.5rem] bg-[#0e2b5ad0] w-72 rounded-lg -ml-4 
             md:p-0 md:items-center md:w-max md:flex-row md:bg-transparent md:static md:flex`}
         >
           <Link

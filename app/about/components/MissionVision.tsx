@@ -8,7 +8,7 @@ export default function MissionVision() {
         <h2 className="text-3xl font-semibold mb-4 text-primary text-center pb-8">
           Mission & Vision
         </h2>
-        <div className="flex justify-center gap-10">
+        <div className="flex justify-center flex-wrap gap-10">
           <div>
             <h3 className="text-xl font-bold mb-2 text-primary">Our Mission</h3>
             <p className="text-gray-700 max-w-7xl">

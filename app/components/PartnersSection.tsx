@@ -10,7 +10,7 @@ export default function PartnersSection() {
   ];
 
   return (
-    <div className="py-16 px-4 sm:px-0 bg-[#0e2b5a] text-white w-full">
+    <div className="py-16 px-4 sm:px-0 bg-primary text-white w-full">
       <div className="mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8">Our Partners</h2>
         <div className="flex flex-wrap sm:justify-center items-center gap-4 sm:gap-8">

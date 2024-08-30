@@ -13,7 +13,7 @@ export default function Impact() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center justify-items-center items-start ">
           {/* Statistics & Metrics */}
-          <div className="max-w-80">
+          <div className="max-w-96">
             <h3 className="text-2xl font-bold mb-4 text-primary">
               Key Metrics
             </h3>
