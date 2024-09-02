@@ -5,22 +5,32 @@ import ProjectSearch from "./ProjectSearch";
 import ProjectFilter from "./ProjectFilter";
 import { Filter } from "lucide-react"; // Ensure to install lucide-react
 
+// Define the type for a project
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+  label: string;
+  regNo: string;
+  year: string;
+  imageUrl: string;
+}
+
 export default function Page() {
-  const [projects, setProjects] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [selectedYear, setSelectedYear] = useState("");
-  const [selectedRegNo, setSelectedRegNo] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("");
-  const [selectedLabel, setSelectedLabel] = useState("");
-  const [isFilterOpen, setIsFilterOpen] = useState(false);
-
-
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [searchTerm, setSearchTerm] = useState<string>("");
+  const [selectedYear, setSelectedYear] = useState<string>("");
+  const [selectedRegNo, setSelectedRegNo] = useState<string>("");
+  const [selectedCategory, setSelectedCategory] = useState<string>("");
+  const [selectedLabel, setSelectedLabel] = useState<string>("");
+  const [isFilterOpen, setIsFilterOpen] = useState<boolean>(false);
 
   // Fetching projects from the mock API
   useEffect(() => {
     async function fetchProjects() {
       // const response = await fetch("http://projects");
-      const data = [
+      const data: Project[] = [
         {
           id: 1,
           title: "AI-powered Chatbot",
@@ -40,6 +50,16 @@ export default function Page() {
           regNo: "IoT2024002",
           year: "2024",
           imageUrl: "/i4.png",
+        },
+        {
+          id: 1,
+          title: "AI-powered Chatbot",
+          description: "An AI chatbot that learns from user interactions.",
+          category: "Artificial Intelligence",
+          label: "AI",
+          regNo: "AI2024001",
+          year: "2024",
+          imageUrl: "/i2.png",
         },
       ];
 
@@ -66,9 +86,9 @@ export default function Page() {
   });
 
   return (
-    <div className="flex flex-col lg:flex-row  min-h-screen py-20 lg:-mx-16">
+    <div className="flex flex-col lg:flex-row min-h-screen py-20 lg:-mx-16">
       <aside
-        className={`fixed lg:static top-0 left-0 lg:w-1/4 w-[60%] h-screen overflow-y-auto bg-white shadow-lg p-4 transition-transform duration-300 ${
+        className={`fixed lg:static top-0 left-0 sm:w-1/4 w-[60%] h-screen overflow-y-auto bg-white shadow-lg p-4 transition-transform duration-300 ${
           isFilterOpen ? "block" : "hidden lg:block"
         }`}
       >

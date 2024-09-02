@@ -1,6 +1,18 @@
 import React from "react";
 
-export default function ProjectFilter({
+// Define the types for the props
+interface ProjectFilterProps {
+  selectedYear: string;
+  selectedRegNo: string;
+  selectedCategory: string;
+  selectedLabel: string;
+  onYearChange: (value: string) => void;
+  onRegNoChange: (value: string) => void;
+  onCategoryChange: (value: string) => void;
+  onLabelChange: (value: string) => void;
+}
+
+const ProjectFilter: React.FC<ProjectFilterProps> = ({
   selectedYear,
   selectedRegNo,
   selectedCategory,
@@ -9,9 +21,9 @@ export default function ProjectFilter({
   onRegNoChange,
   onCategoryChange,
   onLabelChange,
-}) {
+}) => {
   return (
-    <div className="text-primary fixed top-0 left-0 lg:w-1/4 z-50 w-[60%] py-20 h-screen  overflow-y-auto lg:overflow-hidden bg-white shadow-lg p-4 lg:static lg:block">
+    <div className="text-primary fixed top-0 left-0  z-50 sm:w-1/4 w-[60%] lg:w-full py-16  h-screen overflow-y-auto lg:overflow-hidden bg-white shadow-lg p-4 lg:static lg:block">
       <h3 className="text-lg font-bold mb-4 text-primary">Filter Projects</h3>
 
       <div className="mb-4 w-full">
@@ -67,4 +79,6 @@ export default function ProjectFilter({
       </div>
     </div>
   );
-}
+};
+
+export default ProjectFilter;
