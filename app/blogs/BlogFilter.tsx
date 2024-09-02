@@ -24,11 +24,11 @@ export default function BlogFilter({
 }: BlogFilterProps) {
   return (
     <div className="w-full md:w-1/2">
-      <div className="flex flex-wrap gap-2 justify-between md:justify-end">
+      <div className="flex flex-nowrap gap-1 lg:gap-2 justify-start lg:justify-end">
         <select
           value={selectedCategory}
           onChange={(e) => onCategoryChange(e.target.value)}
-          className="p-3 border text-primary border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
+          className="p-1.5 lg:p-3 w-1/3 sm:w-40 border text-primary border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
         >
           <option value="">Category</option>
           {categories.map((category) => (
@@ -40,7 +40,7 @@ export default function BlogFilter({
         <select
           value={selectedTopic}
           onChange={(e) => onTopicChange(e.target.value)}
-          className="p-2 border border-gray-300 text-primary rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
+          className="p-1.5 lg:p-3 w-1/3 sm:w-40 border border-gray-300 text-primary rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
         >
           <option value="">Topic</option>
           {topics.map((topic) => (
@@ -53,7 +53,7 @@ export default function BlogFilter({
           type="month"
           value={selectedDate}
           onChange={(e) => onDateChange(e.target.value)}
-          className="p-3 border text-primary border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
+          className="p-1.5 lg:p-3 w-1/3 sm:w-40 border text-primary border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
         />
       </div>
     </div>
