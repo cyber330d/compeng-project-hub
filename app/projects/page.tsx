@@ -14,11 +14,35 @@ export default function Page() {
   const [selectedLabel, setSelectedLabel] = useState("");
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
+
+
   // Fetching projects from the mock API
   useEffect(() => {
     async function fetchProjects() {
-      const response = await fetch("http://localhost:3001/projects");
-      const data = await response.json();
+      // const response = await fetch("http://projects");
+      const data = [
+        {
+          id: 1,
+          title: "AI-powered Chatbot",
+          description: "An AI chatbot that learns from user interactions.",
+          category: "Artificial Intelligence",
+          label: "AI",
+          regNo: "AI2024001",
+          year: "2024",
+          imageUrl: "/i2.png",
+        },
+        {
+          id: 2,
+          title: "Smart Traffic Management",
+          description: "A system to manage city traffic using IoT devices.",
+          category: "IoT",
+          label: "IoT",
+          regNo: "IoT2024002",
+          year: "2024",
+          imageUrl: "/i4.png",
+        },
+      ];
+
       setProjects(data);
     }
     fetchProjects();

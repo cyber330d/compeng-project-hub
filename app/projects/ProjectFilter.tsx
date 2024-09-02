@@ -11,7 +11,7 @@ export default function ProjectFilter({
   onLabelChange,
 }) {
   return (
-    <div className="text-primary fixed top-0 left-0 lg:w-1/4 w-[60%] py-20 h-screen lg:h-auto overflow-y-auto lg:overflow-hidden bg-white shadow-lg p-4 lg:relative lg:block">
+    <div className="text-primary fixed top-0 left-0 lg:w-1/4 z-50 w-[60%] py-20 h-screen  overflow-y-auto lg:overflow-hidden bg-white shadow-lg p-4 lg:static lg:block">
       <h3 className="text-lg font-bold mb-4 text-primary">Filter Projects</h3>
 
       <div className="mb-4 w-full">

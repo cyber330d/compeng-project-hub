@@ -12,7 +12,7 @@ export default function BlogFilter({
 }) {
     return (
       <div className="w-full md:w-1/2">
-        <div className="flex flex-wrap gap-2 justify-end">
+        <div className="flex flex-wrap gap-2 justify-between md:justify-end">
           <select
             value={selectedCategory}
             onChange={(e) => onCategoryChange(e.target.value)}
