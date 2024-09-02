@@ -1,4 +1,5 @@
 // app/blogs/page.tsx
+"use client"
 
 import { useState } from 'react';
 import BlogSearch from './BlogSearch';
