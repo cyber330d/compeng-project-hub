@@ -66,7 +66,7 @@ export default function Page() {
   });
 
   return (
-    <div className="flex flex-col lg:flex-row bg-blue-50 min-h-screen py-20 lg:-mx-16">
+    <div className="flex flex-col lg:flex-row  min-h-screen py-20 lg:-mx-16">
       <aside
         className={`fixed lg:static top-0 left-0 lg:w-1/4 w-[60%] h-screen overflow-y-auto bg-white shadow-lg p-4 transition-transform duration-300 ${
           isFilterOpen ? "block" : "hidden lg:block"
