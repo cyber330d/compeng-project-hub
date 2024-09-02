@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Mail, Lock } from "lucide-react"
+import { Mail, Lock } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -62,17 +62,15 @@ export default function Page() {
   //     router.push(`/profile?${queryParams}`);
   //   }
   // }
-async function onSubmit(values: z.infer<typeof formSchema>) {
-  return new NextResponse("Succesfull");
-}
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    return new NextResponse("Succesfull");
+  }
   return (
-    <div className="flex flex-col items-start justify-center gap-4 w-full  max-w-80 ">
+    <div className="flex flex-col items-start justify-center gap-4 w-full  max-w-96 text-primary">
       {/* form heading */}
       <div className="flex flex-col items-start gap-2">
-        <h2 className="font-medium text-xl  not-italic leading-9">Login</h2>
-        <div className="font-normal text-sm not-italic leading-6">
-          Welcome back continue Learning!
-        </div>
+        <h2 className="font-medium text-2xl  not-italic leading-9">Login</h2>
+        <div className="not-italic ">Welcome back to CompEng Project Hub!</div>
       </div>
       {/* Login form fields */}
       <Form {...form}>
@@ -84,24 +82,25 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
             control={form.control}
             name="username"
             render={({ field }) => (
-              <FormItem className="relative flex flex-col items-start gap-1 w-full self-stretch">
-                <FormLabel className="w-full font-normal text-xs not-italic leading-[18px]">
+              <FormItem className="relative flex flex-col items-start gap-1 w-full  self-stretch">
+                <FormLabel className="font-light w-full not-italic ">
                   Email or Reg No
                 </FormLabel>
                 <div
                   className={cn(
-                    "!mt-0 flex w-full items-center gap-3 self-stretch rounded-lg border-[1px] border-solid bg-white px-4 py-3 hover:border-lms-green focus:border-lms-green focus-visible:border-lms-green",
+                    "!mt-0 flex w-full items-center gap-3 self-stretch rounded-lg border-[1px] border-solid bg-white p-4 hover:border-primary focus:border-primary focus-visible:border-primary",
                     form.formState.errors.username
                       ? "border-red-600"
                       : "border-borders"
                   )}
                 >
-                  <Mail className="w-4 h-4 text-lms-green" />
+                  <Mail className="w-5 h-5 text-primary" />
                   <FormControl>
                     <Input
                       type="email"
                       {...field}
                       placeholder="Registration number or Email"
+                      className="border-transparent"
                     />
                   </FormControl>
                 </div>
@@ -115,23 +114,24 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
             name="password"
             render={({ field }) => (
               <FormItem className="relative flex flex-col items-start gap-1 w-full self-stretch">
-                <FormLabel className="w-full font-normal text-xs not-italic leading-[18px]">
+                <FormLabel className="font-light w-full not-italic">
                   Password
                 </FormLabel>
                 <div
                   className={cn(
-                    "!mt-0 flex w-full items-center gap-3 self-stretch rounded-lg border-[1px] border-solid bg-white px-4 py-3 hover:border-lms-green focus:border-lms-green focus-visible:border-lms-green",
+                    "!mt-0 flex w-full items-center gap-3 self-stretch rounded-lg border-[1px] border-solid bg-white p-4 hover:border-primary focus:border-primary focus-visible:border-primary",
                     form.formState.errors.password
                       ? "border-red-600"
                       : "border-borders"
                   )}
                 >
-                  <Lock className="w-4 h-4 text-lms-green" />
+                  <Lock className="w-5 h-5 text-primary" />
                   <FormControl>
                     <Input
                       type="password"
                       {...field}
                       placeholder="Enter your password"
+                      className="border-transparent"
                     />
                   </FormControl>
                 </div>
@@ -142,17 +142,15 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
 
           <Button
             type="submit"
-            className="flex flex-col justify-center items-center gap-2 bg-lms-green px-[1.688rem] py-[.688rem] rounded-lg w-full font-semibold text-white not-italic leading-60 self-stretch"
+            className="flex flex-col justify-center items-center gap-2 bg-primary px-[1.688rem] py-[.688rem] h-12 rounded-lg w-full font-semibold text-white not-italic leading-60 self-stretch"
           >
             Login
           </Button>
-          <div className="flex justify-between items-center w-full font-normal text-base not-italic leading-6 self-stretch">
-            <span className="text-sm max-[330px]:text-xs">
-              Don&apos;t have an account?
-            </span>
+          <div className="flex justify-between items-center w-full font-normal  not-italic self-stretch">
+            <span className="">Don&apos;t have an account?</span>
             <Link
               href="/register"
-              className="hover:opacity-70 hover:shadow-btn-active md:pl-1 max-[330px]:text-xs text-sm text-lms-green transition"
+              className="hover:opacity-90 hover:shadow-btn-active md:pl-1   text-primary transition"
             >
               Create account
             </Link>

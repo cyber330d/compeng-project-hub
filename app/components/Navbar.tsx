@@ -23,6 +23,7 @@ export default function Navbar() {
             isOpen ? "flex" : "hidden"
           } flex-col p-8 gap-6 absolute top-[3.5rem] bg-[#0e2b5ad0] w-72 rounded-lg -ml-4 
             md:p-0 md:items-center md:w-max md:flex-row md:bg-transparent md:static md:flex`}
+          onClick={toggleMenu}
         >
           <Link
             href="/projects"

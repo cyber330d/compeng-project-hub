@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "AI-powered Chatbot",
+      "description": "An AI chatbot that learns from user interactions.",
+      "category": "Artificial Intelligence",
+      "label": "AI",
+      "regNo": "AI2024001",
+      "year": "2024",
+      "imageUrl": "/images/ai-chatbot.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Smart Traffic Management",
+      "description": "A system to manage city traffic using IoT devices.",
+      "category": "IoT",
+      "label": "IoT",
+      "regNo": "IoT2024002",
+      "year": "2024",
+      "imageUrl": "/images/smart-traffic.jpg"
+    }
+    
+  ]
+}
