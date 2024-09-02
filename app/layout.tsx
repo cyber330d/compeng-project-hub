@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en" className="w-full">
       <body className={`${inter.className} w-full`}>
           <Navbar />
-        <main className="lg:px-16 ">
+        <main className="lg:px-16 w-full">
           {/* <div className="w-full fixed  bg-[#0e2b5a] h-[4.4rem] z-10"></div> */}
           {children}
         </main>

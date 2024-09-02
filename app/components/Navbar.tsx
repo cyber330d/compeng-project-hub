@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 lg:-left-16 lg:-right-16  bg-blend-overlay z-50 shadow-md px-4 sm:px-0 lg:px-36 bg-primary p-4 w-full">
+    <nav className="fixed top-0 bg-blend-overlay z-50 shadow-md px-4 sm:px-0 lg:px-16 bg-primary p-4 w-full">
       <div className="w-full flex items-center justify-between rounded">
         <div className="text-white text-base sm:text-xl md:text-2xl font-bold">
           <Link href="/">CompEng Project Hub</Link>
