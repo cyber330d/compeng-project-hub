@@ -1,9 +1,9 @@
 // app/blogs/page.tsx
 
 import { useState } from 'react';
-import BlogSearch from '../components/BlogSearch';
-import BlogFilter from '../components/BlogFilter';
-import BlogListing from '../components/BlogListing';
+import BlogSearch from './BlogSearch';
+import BlogFilter from './BlogFilter';
+import BlogListing from './BlogListing';
 
 const sampleBlogs = [
     { id: 1, title: 'Tech Innovations', description: 'Exploring the latest in tech.', category: 'Tech', topic: 'AI', date: '2024-09' },
