@@ -1,53 +1,68 @@
-// src/pages/api/projects/[id].ts
-import type { NextApiRequest, NextApiResponse } from "next";
-import prisma from "@/lib/prisma";
+import { NextRequest, NextResponse } from "next/server";
+import prisma from "@/lib/prisma"; // Adjust the import path as needed
 
-type Params = {
-  id: string;
-};
-// GET /api/projects/[id]
-export async function GET(req: NextApiRequest, res: NextApiResponse, context: { params: Params }) {
-  const id = context.params.id; // '1'
+// Get a specific project by ID
+export async function GET(request: NextRequest) {
+  const { searchParams } = new URL(request.url);
+  const id = searchParams.get("id");
+
+  if (!id) {
+    return NextResponse.json({ error: "ID is required" }, { status: 400 });
+  }
+
   try {
     const project = await prisma.project.findUnique({
-      where: { id: String(id) }, // UUIDs are strings
+      where: { id: id },
     });
-    console.log(project);
 
     if (!project) {
-      return res.status(404).json({ message: "Project not found" });
+      return NextResponse.json({ error: "Project not found" }, { status: 404 });
     }
-    console.log("-------------", project);
-    res.status(200).json(project);
+
+    return NextResponse.json(project);
   } catch (error) {
-    res.status(500).json({ message: "Internal server error" });
+    return NextResponse.json({ error: "An error occurred" }, { status: 500 });
   }
 }
 
-// PUT /api/projects/[id]
-export async function PUT(req: NextApiRequest, res: NextApiResponse) {
-  const { id } = req.query;
-  const updatedData = req.body;
+// Update a specific project by ID
+export async function PUT(request: NextRequest) {
+  const { searchParams } = new URL(request.url);
+  const id = searchParams.get("id");
+
+  if (!id) {
+    return NextResponse.json({ error: "ID is required" }, { status: 400 });
+  }
+
   try {
-    const project = await prisma.project.update({
-      where: { id: String(id) },
-      data: updatedData,
+    const body = await request.json();
+    const updatedProject = await prisma.project.update({
+      where: { id: id },
+      data: body,
     });
-    res.status(200).json(project);
+
+    return NextResponse.json(updatedProject);
   } catch (error) {
-    res.status(500).json({ message: "Internal server error" });
+    return NextResponse.json({ error: "An error occurred" }, { status: 500 });
   }
 }
 
-// DELETE /api/projects/[id]
-export async function DELETE(req: NextApiRequest, res: NextApiResponse) {
-  const { id } = req.query;
+// Delete a specific project by ID
+export async function DELETE(request: NextRequest) {
+  const { searchParams } = new URL(request.url);
+  const id = searchParams.get("id");
+
+  if (!id) {
+    return NextResponse.json({ error: "ID is required" }, { status: 400 });
+  }
+
   try {
     await prisma.project.delete({
-      where: { id: String(id) },
+      where: { id: id },
     });
-    res.status(204).end(); // No content
+
+    return NextResponse.json({ message: "Project deleted successfully" });
   } catch (error) {
-    res.status(500).json({ message: "Internal server error" });
+    return NextResponse.json({ error: "An error occurred" }, { status: 500 });
   }
 }
