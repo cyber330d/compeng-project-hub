@@ -28,9 +28,9 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute   h-[60vh] sm:h-full w-full box-border">
+      <div className="absolute  h-full w-full box-border">
         <Image
-          src="/slide1.png" // Replace with your image path
+          src="/dept.jfif"
           alt="Hero Image"
           width="1280"
           height="720"

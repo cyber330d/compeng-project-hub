@@ -1,0 +1,36 @@
+// prisma/schema.prisma
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Project {
+  id               String   @id @default(uuid())
+  title            String
+  creators         String
+  supervisor       String
+  abstract         String
+  introduction     String
+  methodology      String
+  result           String
+  innovation       String
+  commercialization String
+  conclusion       String
+  futureWork       String
+  acknowledgment   String
+  references       String
+  sponsors         String
+  teams            String
+  contributors     String
+  projectDocument  String
+  methodologyImages String
+  resultImages     String
+  resources        String
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+

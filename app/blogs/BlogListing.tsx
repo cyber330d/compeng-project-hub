@@ -25,7 +25,7 @@ export default function BlogListing({ blogs }: BlogListingProps) {
             className="bg-white rounded-lg shadow-lg overflow-hidden"
           >
             <Link
-              href={`/blog/${blog.id}`}
+              href={`/blogs/${blog.id}`}
               className="text-[#214a8d] hover:underline font-semibold"
             >
               <Image
@@ -42,7 +42,7 @@ export default function BlogListing({ blogs }: BlogListingProps) {
               </h3>
               <p className="text-gray-600 mb-4">{blog.excerpt}</p>
               <Link
-                href={`/blog/${blog.id}`}
+                href={`/blogs/${blog.id}`}
                 className="text-[#214a8d] hover:underline font-semibold"
               >
                 Read More

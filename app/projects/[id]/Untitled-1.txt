@@ -1,0 +1,72 @@
+
+DEVELOPMENT OF A LEARNING MANAGEMENT SYSTEM (LMS) WITH INTEGRATED 3D MODEL INTERACTION
+
+Erasmus E Obeth
+
+Engr. R. F. Adebiyi
+
+3D Insights introduces a prototype Learning Management System (LMS) that integrates interactive 3D model interaction to enhance student
+comprehension of complex course content, particularly in STEM education. Traditional educational methods often struggle to effectively convey spatial
+or visual concepts, leading to reduced comprehension and retention among learners. By leveraging 3D models within the LMS, students can interact
+with and visualize complex concepts, improving comprehension, engagement, and retention. A prototype of the LMS was developed and the capability
+to upload 3D models in various export format and interact with them are integrated into the platform. This prototype demonstrates the potential of
+3D-enhanced LMS platforms to revolutionize STEM education, providing a more engaging, accessible, and effective learning experience for students.
+The LMS prototype 3D Insights with integrated 3D model interaction effectively demonstrated its ability to enhance student engagement and
+comprehension in STEM subjects. By addressing the challenges of passive learning and the difficulty in understanding complex concepts, the system
+provided an interactive and immersive educational experience. The project successfully showed that this approach can make STEM education more
+accessible and impactful. Ongoing improvements and research will continue to build on these findings to further enhance the prototype’s
+educational value.
+
+
+Today’s education, especially in STEM (Science, Technology, Engineering, and Mathematics) fields, students often struggle to understand complex concepts using traditional text and 2D images. These methods can make it hard for students to understand complex concepts, leading to lower comprehension and retention (Smith et al., 2020). 3D Insights aims to improve this by creating a Learning Management System (LMS) that includes interactive 3D models. This new approach allows students to interact with and explore 3D models directly in the LMS, making learning more engaging and effective (Wenzel & Moreno, 2022). By integrating these 3D models, we hope to make STEM subjects easier to understand and more exciting for students
+
+The process for the implementation of the project is summarized below:
+
+
+Some of the developed prototype Screens and results are shown in the figures below. 
+
+3D Insights introduces an innovative approach to Learning Management Systems (LMS) byintegrating interactive 3D model technology using WebGL and Three.js. This novel method enhances traditional LMS platforms, offering a dynamic educational tool that overcomes the limitations of text-based and 2D visual methods of representing learning materials and also provides a new, more engaging dimension to learning.
+
+The prototype has strong
+commercialization potential as it addresses
+a critical need in STEM education. Its
+innovative use of 3D models could attract
+educational and corporate institutions
+seeking advanced learning solutions.
+Further development could lead to
+partnerships with educational technology
+providers and integration into existing LMS
+platforms.
+
+
+
+The LMS prototype 3D Insights with integrated 3D model interaction effectively demonstrated its ability to enhance student engagement and
+comprehension in STEM subjects. By addressing the challenges of passive learning and the difficulty in understanding complex concepts, the system
+provided an interactive and immersive educational experience. The project successfully showed that this approach can make STEM education more
+accessible and impactful. Ongoing improvements and research will continue to build on these findings to further enhance the prototype’s
+educational value.
+
+
+
+
+Future work may involve support for AR, VR for immersive learning,
+gamification to boost engagement, and AI-driven recommendations
+for personalize learning. Continues Continuous Research and
+collaborations with educational institutions will be vital for refining
+and expanding these innovations and their implementation.
+
+I thank Engr. Risikat. F. Adebiyi for her guidance and support throughout the development of 3D Insight
+LMS., which where instrumental in bringing this project to fruition. I am also deeply appreciative of my
+family and friends for their unwavering support, dedication and encouragement throughout the
+endeavor.to the project's success.
+
+Smith, D. W., Lampley, S. A., Dolan, B., Williams, G., Schleppenbach, D., & Blair, M. (2020). Effect of 3D manipulatives on students with visual impairments who are learning
+chemistry constructs: a pilot study. Journal of Visual Impairment & Blindness, 114(5), 370-381.
+Wenzel, A., & Moreno, J. (2022). Designing and facilitating optimal LMS student learning experiences: Considering students' needs for accessibility, navigability, personalization, and
+relevance in their online courses. The Northwest eLearning Journal, 2(1).
+
+Cyber330d
+
+front end, backend, ui, ux, 3d model,integration, lms
+
+cyber330d
